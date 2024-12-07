@@ -1,7 +1,7 @@
 import React from 'react';
 import bill from '/assets/bill.png';
 import thumbsUp from '/assets/fluent-emoji_thumbs-up-dark.png'
-import DownloadButton from '../DownloadButton';
+import DownloadButton from '../extra/DownloadButton';
 
 const SpendWisely = () => {
   return (

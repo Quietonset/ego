@@ -18,11 +18,11 @@ const FAQ = () => {
     
 
   return (
-    <div className='bg-[#90f56c] flex justify-center items-center h-[580px]' id='faq'>
-      <div className='flex gap-x-4'>
-        <h1 className='font-semibold text-7xl pl-10 text-[#4040d9] w-[500px]'>FAQ</h1>
+    <div className='bg-[#90f56c] flex justify-center items-center sm:h-[630px] xl:h-[580px]' id='faq'>
+      <div className='flex sm:flex-col sm:gap-y-5 gap-x-4 h-[480px] sm:w-full sm:px-3'>
+        <h1 className='font-semibold sm:text-4xl text-7xl sm:pl-0 pl-10 text-[#4040d9] sm:text-center xl:w-[500px]'>FAQ</h1>
         {/* FAQ */}
-        <div className='flex flex-col gap-y-3 w-[500px]'>
+        <div className='flex flex-col gap-y-3 xl:w-[500px]'>
             {FAQ.map((card) => {
                 return (
                         <div
@@ -30,7 +30,7 @@ const FAQ = () => {
                         onClick={() => toggleFAQ(card.id)}
                         className={`${ openQuestionId === card.id ? 'h-28' : 'h-20'} transition-all duration-300 rounded-3xl border h-20 w-full bg-[#fffaff] py-8 px-6 border-[#4040d9] hover:cursor-pointer`} 
                         >
-                            <div className='flex justify-between items-center '>
+                            <div className='flex justify-between items-center sm:text-sm'>
                                 <p>{ card.question }</p>
                                 <FaPlus className={`transform transition-transform duration-200 ${ openQuestionId === card.id && 'rotate-45 text-gray-700'} hover:text-gray-600 hover:cursor-pointer text-lg`}/>
                             </div>

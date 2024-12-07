@@ -1,10 +1,10 @@
 import React from 'react'
-import Footer from '../components/Footer'
-import Nav from '../components/Nav'
+import Nav from '../components/extra/Nav'
 import Hero from '../components/landing/Hero'
 import SpendWisely from '../components/landing/SpendWisely'
 import FAQ from '../components/landing/FAQ'
 import AboutUs from '../components/landing/AboutUs'
+import Footer from '../components/extra/Footer'
 
 const LandingPage = () => {
   return (

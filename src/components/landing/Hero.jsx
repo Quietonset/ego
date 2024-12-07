@@ -10,27 +10,30 @@ import darkBlueBill from '/assets/bill (3).png';
 import croppedBill from '/assets/bill (4).png';
 
 // import buttons
-import CreateAccountButton from '../CreateAccountButton';
-import DownloadButton from '../DownloadButton';
+import CreateAccountButton from '../../components/extra/CreateAccountButton';
+import DownloadButton from '../../components/extra/DownloadButton';
+// import modal
+import ScanModal from '../extra/ScanModal';
 
 const Hero = () => {
   return (
-    <main className='bg-[#3f3fd9] flex h-screen' id='hero'>
+    <main className='bg-[#3f3fd9] flex sm:flex-col h-screen sm:pt-10' id='hero'>
       {/* text */}
-      <div className='flex flex-col justify-center ml-20'>
+      <div className='flex flex-col justify-center ml-20 sm:ml-5'>
         <div className='flex gap-3.5 items-center'>
-            <h1 className='capitalize font-bold text-7xl text-white relative leading-tight'>
-                manage your money with
+            <h1 className='capitalize font-bold sm:text-4xl text-7xl text-white relative leading-tight'>
+                manage your <br className='hidden sm:block' />money <span className='sm:mt-10'>with</span>
                 <div className='relative'>
-                  <img src={ egoText } alt="Ego" className='absolute -right-12 bottom-0'/>
-                  <img src={ greenBill } alt="Image of a green bill" className='absolute -top-40 -right-20' />
+                  <img src={ egoText } alt="Ego" className='absolute -right-12 bottom-0 sm:h-12 sm:-right-[75px] sm:-bottom-2'/>
+                  <img src={ greenBill } alt="Image of a green bill" className='absolute sm:h-14 sm:-right-24 sm:bottom-7 xl:-top-40 xl:-right-20' />
                 </div>
             </h1>
         </div>
-        <p className='text-white mt-5 text-lg'>Track your expenses. Spend within your budget</p>
-        <div className='flex gap-x-3 mt-7'>
+        <p className='text-white mt-5 sm:text-sm sm:font-extralight xl:text-lg'>Track your expenses. Spend within your budget</p>
+        <div className='flex gap-x-3 sm:flex-col-reverse sm:gap-y-4 sm:my-4 xl:mt-7'>
             <CreateAccountButton/>
             <DownloadButton/>
+            <ScanModal/>
         </div>
       </div>
       {/* image */}
