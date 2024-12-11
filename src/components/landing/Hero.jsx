@@ -9,6 +9,10 @@ import pinkBill from '/assets/bill (2).png';
 import darkBlueBill from '/assets/bill (3).png';
 import croppedBill from '/assets/bill (4).png';
 
+// mobile
+import HeroImg2 from '/assets/man-mobile.png';
+import all from '/assets/Group 3.png';
+
 // import buttons
 import CreateAccountButton from '../../components/extra/CreateAccountButton';
 import DownloadButton from '../../components/extra/DownloadButton';
@@ -17,7 +21,7 @@ import ScanModal from '../extra/ScanModal';
 
 const Hero = () => {
   return (
-    <main className='bg-[#3f3fd9] flex sm:flex-col h-screen sm:pt-10' id='hero'>
+    <main className='bg-[#3f3fd9] flex sm:flex-col sm:h-full h-screen sm:pt-10' id='hero'>
       {/* text */}
       <div className='flex flex-col justify-center ml-20 sm:ml-5'>
         <div className='flex gap-3.5 items-center'>
@@ -37,9 +41,10 @@ const Hero = () => {
         </div>
       </div>
       {/* image */}
-      <div className='relative'>
-        <img src={ overlayLight } alt="Light" className=''/>
-        <img src={ heroImg } alt="An image of a man" className='absolute top-0 z-10 h-screen object-cover'/>
+      <div className='relative sm:hidden'>
+        <img src={ overlayLight } alt="Light" className='sm:h-[450px]'/>
+        <img src={ heroImg } alt="An image of a man" className='absolute top-0 z-10 h-screen sm:hidden object-cover'/>
+        {/* <img src={ HeroImg2} alt="An Image of a man" className='absolute top-0'  /> */}
         <img src={ lightBlueBill } alt="Image of a light blue bill" className='absolute -top-40 right-52' />
         <img src={ darkBlueBill } alt="Image of a dark blue bill" className='absolute top-16 right-36' />
         <img src={ croppedBill } alt="Image of cropped bill" className='absolute right-0 top-[25%]' />
