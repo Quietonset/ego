@@ -4,8 +4,8 @@ import { MenuContext } from '../../context/MenuContext'
 const Menu = () => {
     const {isOpen, handleMenuClose} = useContext(MenuContext);
   return isOpen && (
-    <div className='fixed top-0'>
-      hello
+    <div className='absolute top-0 bg-white'>
+      hello test
     </div>
   )
 }
