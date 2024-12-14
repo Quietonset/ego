@@ -2,10 +2,10 @@ import React from 'react'
 
 const AboutUs = () => {
   return (
-    <div className='bg-[#fffaff] sm:py-16 py-32' id='about'>
-      <h1 className='font-semibold sm:text-4xl text-7xl text-[#4040d9] text-center sm:mb-8 mb-16'>About us</h1>
+    <div className='bg-[#fffaff] sm:py-16 md:py-24 lg:py-28 xl:py-32 2xl:py-36' id='about'>
+      <h1 className='font-semibold sm:text-4xl text-7xl text-[#4040d9] text-center sm:mb-8 md:mb-12 lg:mb-14 xl:mb-16 2xl:mb-20'>About us</h1>
       {/* grid box */}
-      <div className='grid sm:grid-cols-1 sm:mx-5 grid-cols-3 gap-y-10 gap-x-20 mx-20'>
+      <div className='grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-3 sm:mx-5 md:mx-8 lg:mx-12 xl:mx-20 2xl:mx-20 gap-y-10 gap-x-20'>
         <div className='sm:w-full w-[350px]'>
             <h3 className='font-semibold sm:text-base text-2xl text-[#2e2e2e] mb-4'>Empowering You to Take <br className='sm:hidden' />Charge of Your Finances</h3>
             <div className='sm:text-xs text-lg text-[#6e6e6e] flex flex-col gap-y-6'>

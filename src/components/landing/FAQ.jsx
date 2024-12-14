@@ -18,11 +18,11 @@ const FAQ = () => {
     
 
   return (
-    <div className='bg-[#90f56c] flex justify-center items-center sm:h-[630px] xl:h-[580px]' id='faq'>
-      <div className='flex sm:flex-col sm:gap-y-5 gap-x-4 h-[480px] sm:w-full sm:px-3'>
-        <h1 className='font-semibold sm:text-4xl text-7xl sm:pl-0 pl-10 text-[#4040d9] sm:text-center xl:w-[500px]'>FAQ</h1>
+    <div className='bg-[#90f56c] flex justify-center items-center sm:h-[630px] md:h-[560px] lg:h-[580px] xl:h-[580px] 2xl:h-[600px]' id='faq'>
+      <div className='flex sm:flex-col sm:gap-y-5 md:gap-x-10 lg:gap-x-6 xl:gap-x-4 2xl:gap-x-4 h-[480px] sm:w-full sm:px-3'>
+        <h1 className='font-semibold sm:text-4xl text-7xl sm:pl-0 md:pr-10 lg:pl-5 xl:pl-10 2xl:pl-12 text-[#4040d9] sm:text-center xl:w-[500px]'>FAQ</h1>
         {/* FAQ */}
-        <div className='flex flex-col gap-y-3 xl:w-[500px]'>
+        <div className='flex flex-col gap-y-3 md:w-[400px] xl:w-[500px]'>
             {FAQ.map((card) => {
                 return (
                         <div

@@ -7,17 +7,16 @@ export const MenuProvider = ({ children }) => {
     // menu state
     const [isOpen, setIsOpen] = useState(false);
 
-    // function to handle menu close
+    // function to toggle menu and handle menu close
+    const toggleMenu = () => {
+        setIsOpen(!isOpen)
+    }
+
     const handleMenuClose = () => {
-        setIsOpen(false)
+      setIsOpen(false);
     }
-
-    const handleMenuOpen = () => {
-        setIsOpen(true)
-    }
-
   return (
-    <MenuContext.Provider value={{ isOpen, setIsOpen, handleMenuClose, handleMenuOpen }}>
+    <MenuContext.Provider value={{ isOpen, setIsOpen, toggleMenu, handleMenuClose }}>
         { children }
     </MenuContext.Provider>
   )

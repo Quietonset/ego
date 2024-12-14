@@ -12,7 +12,7 @@ const ScanModal = () => {
 
     return isPopupShown && (
         <section onClick={() => setIsPopupShown(false)} className='fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50'>
-            <div className='rounded-[36px] bg-[#fffbff] flex justify-center py-4 xl:w-[600px] relative'>
+            <div className='rounded-[36px] bg-[#fffbff] flex justify-center py-4 md:w-[500px] lg:w-[550px] xl:w-[600px] 2xl:w-[650px] relative'>
                 {/* WHOLE BODY */}
                 <div className='flex flex-col items-center sm:gap-y-1 xl:gap-y-2'>
                     {/* ICONS/IMAGES */}

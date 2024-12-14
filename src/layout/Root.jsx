@@ -4,9 +4,12 @@ import Menu from '../components/landing/Menu'
 
 const Root = () => {
   return (
-    <div className='font-spaceGrotesk'>
-      <Outlet/>
-      <Menu/>
+    <div>
+      <div className='font-spaceGrotesk'>
+        <Outlet/>
+        <Menu/>
+      </div>
+      {/* <h1 className='uppercase font-bold hidden md:flex justify-center items-center h-screen' >not available on mobile yet</h1> */}
     </div>
   )
 }

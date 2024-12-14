@@ -6,11 +6,11 @@ import CreateAccountButton from '../extra/CreateAccountButton';
 
 const Footer = () => {
   return (
-    <div className='bg-[#171A21] w-full flex sm:flex-col-reverse gap-x-44 sm:px-3 px-36 py-2.5' id='contact'>
+    <div className='bg-[#171A21] w-full flex sm:flex-col-reverse md:flex-col-reverse gap-x-44 sm:px-3 md:px-5 lg:px-16 xl:px-20 2xl:px-36 py-2.5' id='contact'>
       {/* IMAGE */}
-      <img src={logo} alt="Image of Logo" className='w-[600px] sm:my-10' />
+      <img src={logo} alt="Image of Logo" className='w-[600px] sm:my-10 md:my-12 md:w-full' />
       {/* LINKS, COPYRIGHT AND BUTTONS */}
-      <div className='sm:mt-12 mt-28 flex flex-col justify-between'>
+      <div className='sm:mt-12 md:mt-16 lg:mt-20 xl:mt-28 2xl:mt-28 flex flex-col justify-between'>
         <div className='flex flex-col gap-y-5'>
           <DownloadButton/>
           <CreateAccountButton/>
@@ -33,10 +33,10 @@ const Footer = () => {
             <span>LinkedIn</span>
           </div>
         </div>
-        <p className='text-white whitespace-nowrap text-sm sm:mt-5'>
+        <p className='text-white whitespace-nowrap text-sm sm:mt-5 md:mt-10'>
           <span className='mr-4 sm:block sm:mb-5'>contact@ego.com</span>
           <span className='sm:hidden'> |</span>
-          <span className='ml-4 sm:ml-0'>&copy; 2024 Ego. All Rights Reserved.</span>
+          <span className='ml-4 sm:ml-0 '>&copy; 2024 Ego. All Rights Reserved.</span>
         </p>
       </div>
     </div>

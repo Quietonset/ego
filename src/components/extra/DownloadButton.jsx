@@ -8,10 +8,11 @@ const DownloadButton = () => {
     <button onClick={() => handlePopupScan()} className='bg-[#90f56c] hover:bg-[#90e56c] border border-[#f2f4f7] text-[#4040d9] rounded-full h-11 w-64 px-6 gap-2 flex items-center justify-between'>
       {/* ICONS */}
       <div className='flex text-xl items-center'>
-        <div className='p-0.5 border-r border-[#4040d9]'>
+        <div className='p-0.5'>
             <FaGooglePlay/>
         </div>
-        <div className='p-0.5 border-l border-[#4040d9]'>
+        |
+        <div className='p-0.5'>
             <FaApple/>
         </div>
       </div>
