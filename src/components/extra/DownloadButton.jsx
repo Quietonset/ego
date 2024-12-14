@@ -17,7 +17,7 @@ const DownloadButton = () => {
         </div>
       </div>
       {/* TEXT */}
-      <p className='font-semibold'>Download the app</p>
+      <p className='font-semibold whitespace-nowrap'>Download the app</p>
     </button>
   )
 }
